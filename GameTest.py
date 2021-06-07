@@ -25,15 +25,7 @@ playerRect = pygame.draw.rect(screen,color, pygame.Rect(playerX, playerY, 50, 50
 
 #bullet set up
 class Bullet():
-    bulletX = playerX + 25
-    bulletY = playerY
-    
-    def __init__(self) -> None:
-        pygame.draw.circle(screen, (180, 50, 20), (bulletX,bulletY), 10)
-
-    def update(self):
-        self.bulletY += 5
-        pass
+    pass
 
 #clock set up for each frame
 clock = pygame.time.Clock()
@@ -52,9 +44,7 @@ while running:
     if pressed[pygame.K_RIGHT]: playerX += 3
     if pressed[pygame.K_LEFT]: playerX -= 3
     if pressed[pygame.K_SPACE]: 
-        Bullet.__init__(Bullet)
-        Bullet.update(Bullet)
-
+       pass
 
     pygame.draw.rect(screen,color, pygame.Rect(playerX, playerY, 50, 50))
     pygame.display.flip()
